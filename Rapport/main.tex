@@ -1,0 +1,52 @@
+\documentclass[12pt,a4paper,titlepage]{report} 
+\usepackage{titlesec}
+\usepackage{cite}
+\usepackage{listings}
+\usepackage{amsmath}
+\lstset{language=csh, frame=single, basicstyle=\footnotesize}
+\usepackage{float} %enables use of [H] placement specifiers in figures 
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage[table, x11names]{xcolor}
+\usepackage{svg}
+\usepackage{graphicx}
+\usepackage{placeins}
+\usepackage{longtable}
+\usepackage{morefloats}
+\usepackage{listings}
+\usepackage{color}
+
+\renewcommand{\contentsname}{Indholdsfortegnelse}
+\renewcommand*\listfigurename{Figures}
+
+\newcommand{\tab}[1]{\hspace{1cm}{#1}}
+
+\titleformat{\chapter}
+{\normalfont\LARGE\bfseries}{\thechapter.\ }{10pt}{}
+\titlespacing*{\chapter}{0pt}{0pt}{10pt}
+
+\begin{document}
+\setcounter{section}{0}
+\bibliographystyle{apalike}
+
+\input{forside.tex}
+
+\setcounter{tocdepth}{1}
+\tableofcontents
+
+\clearpage
+
+\input{intro.tex}
+\input{tese.tex}
+\input{kilder.tex}
+\input{teori.tex}
+\input{eskatologi.tex}
+\input{udgang.tex}
+\input{apo.tex}
+\input{skaersilden.tex}
+\input{universalisme.tex}
+\input{annihilation.tex}
+\input{diskussion.tex}
+\input{konklusion.tex}
+\end{document}
